@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home_menu"
+        android:icon="@drawable/ic_home"
+        android:title="Poster" />
+    <item
+        android:id="@+id/custom_menu"
+        android:icon="@drawable/ic_custom"
+        android:title="Custom" />
+
+    <item
+        android:id="@+id/business_menu"
+        android:icon="@drawable/ic_business"
+        android:title="My Business" />
+
+
+    <item
+        android:id="@+id/download_menu"
+        android:icon="@drawable/ic_my_creation"
+        android:title="My Creation" />
+
+    <item
+        android:id="@+id/profile_menu"
+        android:icon="@drawable/ic_user_profile"
+        android:title="Profile" />
+</menu>

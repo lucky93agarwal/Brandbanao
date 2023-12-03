@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sweet="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="320dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    sweet:cardBackgroundColor="@color/dialog_color"
+    sweet:cardCornerRadius="@dimen/_20sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/_2sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_8sdp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/txtTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/add_text"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+            <com.astarconcepts.brandbanao.custom.poster.views.AutoFitEditText
+                android:id="@+id/auto_fit_edit_text"
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true"
+                android:ems="10"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="fill|end|start"
+                android:hint="Add Text here"
+                android:imeActionLabel="Done"
+                android:imeOptions="actionPrevious"
+                android:inputType="textMultiLine"
+                android:isScrollContainer="true"
+                android:maxLength="250"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black30"
+                android:textSize="@dimen/_12sdp" />
+
+
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:gravity="center|left"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/btnCancelDialog"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_marginHorizontal="@dimen/_6sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_shape"
+                    android:backgroundTint="@color/dialog_btn_color"
+                    android:gravity="center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="14sp">
+
+                    <TextView
+                        android:id="@+id/tv_yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical"
+                        android:text="Cancel"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12sdp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/btnAddTextSDialog"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_marginHorizontal="@dimen/_6sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_shape"
+                    android:backgroundTint="@color/active_color"
+                    android:gravity="center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/al_white"
+                    android:textSize="14sp">
+
+                    <TextView
+                        android:id="@+id/tv_ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="ADD"
+                        android:fontFamily="@font/nunito_sans_semibold"
+                        android:textColor="@color/al_white"
+                        android:textSize="@dimen/_12sdp" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

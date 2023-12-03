@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation.xml"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.astarconcepts.brandbanao.ui.fragments.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_customFragment"
+            app:destination="@id/customFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/customFragment"
+        android:name="com.astarconcepts.brandbanao.ui.fragments.CustomFragment"
+        android:label="Custom"
+        tools:layout="@layout/fragment_custom">
+        <action
+            android:id="@+id/action_customFragment_to_myBusinessFragment"
+            app:destination="@id/myBusinessFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/myBusinessFragment"
+        android:name="com.astarconcepts.brandbanao.ui.fragments.MyBusinessFragment"
+        android:label="My Business"
+        tools:layout="@layout/fragment_my_business">
+        <action
+            android:id="@+id/action_myBusinessFragment_to_allSavedDataFragment"
+            app:destination="@id/allSavedDataFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.astarconcepts.brandbanao.ui.fragments.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/allSavedDataFragment"
+        android:name="com.astarconcepts.brandbanao.ui.fragments.AllSavedDataFragment"
+        android:label="All Saved Data"
+        tools:layout="@layout/fragment_my_downloads">
+        <action
+            android:id="@+id/action_allSavedDataFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+
+
+</navigation>

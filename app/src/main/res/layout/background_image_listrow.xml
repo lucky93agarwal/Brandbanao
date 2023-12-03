@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="@dimen/_79sdp"
+    android:layout_height="@dimen/_78sdp"
+    android:background="@color/color_bar"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/header"
+        android:layout_width="@dimen/_78sdp"
+        android:layout_height="@dimen/_78sdp"
+        android:layout_alignParentTop="true"
+        app:cardBackgroundColor="@color/color_bar"
+        app:cardCornerRadius="@dimen/_2sdp"
+        app:cardElevation="@null">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/thumbnail_image"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="@dimen/_2sdp"
+                android:scaleType="centerCrop" />
+
+            <RelativeLayout
+                android:id="@+id/imgDownload"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <ImageView
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/ic_download_sticker"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <ProgressBar
+                android:id="@+id/downloadProgress"
+                style="?android:progressBarStyle"
+                android:layout_width="@dimen/_18sdp"
+                android:layout_height="@dimen/_18sdp"
+                android:layout_centerInParent="true"
+                android:theme="@style/Progressbar.White"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

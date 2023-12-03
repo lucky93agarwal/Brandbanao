@@ -1,0 +1,182 @@
+{
+  "project_info": {
+    "project_number": "647118127714",
+    "project_id": "codecanyon-64d89",
+    "storage_bucket": "codecanyon-64d89.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:647118127714:android:53ca8ae13879127d0e873b",
+        "android_client_info": {
+          "package_name": "com.RunnerDeveloper.GIFnew"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "647118127714-1b7he73t0itl0h0dddtnads504b6hv2h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8jcCq5Gm9PMhi1-a-ClRgExS7oLO0qBw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "647118127714-1b7he73t0itl0h0dddtnads504b6hv2h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:647118127714:android:4f9f75d2600628950e873b",
+        "android_client_info": {
+          "package_name": "com.astarconcepts.brandbanao"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "647118127714-19creacbrs02rl5nhpbqdck4mqptk7nl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.astarconcepts.brandbanao",
+            "certificate_hash": "0484b6de37bc94b3d58cb7f36e38984d95db1beb"
+          }
+        },
+        {
+          "client_id": "647118127714-7c9tjeq5tnbkqujaamvkn3c9m6teuqii.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.astarconcepts.brandbanao",
+            "certificate_hash": "2ce17d45c59ae6710c8c018eba8932c09377495e"
+          }
+        },
+        {
+          "client_id": "647118127714-djb1k5udh571ggm9kc6vad7b4k7j301s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.astarconcepts.brandbanao",
+            "certificate_hash": "9e6acec0cfd68a69b8afc553e08ed49b0d900ee6"
+          }
+        },
+        {
+          "client_id": "647118127714-h8lcsdctit6dcf6gu96v5qm88m463nsu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.astarconcepts.brandbanao",
+            "certificate_hash": "ffd7de7dd8dc43df0b7e1e91e9b264a74504122e"
+          }
+        },
+        {
+          "client_id": "647118127714-jso0rkat8kq63v02fse028jc80fem7j4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.astarconcepts.brandbanao",
+            "certificate_hash": "b5558776fcfe8b957d223528f610911184fa3098"
+          }
+        },
+        {
+          "client_id": "647118127714-m7vnrooltae3lnoqkmivv2o3h9fnr7gr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.astarconcepts.brandbanao",
+            "certificate_hash": "69bdbe237a95b332a4f6672771b33465aa11b4d4"
+          }
+        },
+        {
+          "client_id": "647118127714-u97o74ehuslfn2sr5dm37vi11banfgdo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.astarconcepts.brandbanao",
+            "certificate_hash": "7af54f81e5029e5b7eaa47860e5c2ebe6926506c"
+          }
+        },
+        {
+          "client_id": "647118127714-1b7he73t0itl0h0dddtnads504b6hv2h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8jcCq5Gm9PMhi1-a-ClRgExS7oLO0qBw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "647118127714-1b7he73t0itl0h0dddtnads504b6hv2h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:647118127714:android:8ef77eb3dadb01fa0e873b",
+        "android_client_info": {
+          "package_name": "com.astarconcepts.postermakeapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "647118127714-1b7he73t0itl0h0dddtnads504b6hv2h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8jcCq5Gm9PMhi1-a-ClRgExS7oLO0qBw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "647118127714-1b7he73t0itl0h0dddtnads504b6hv2h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:647118127714:android:15fa511ab8052f3f0e873b",
+        "android_client_info": {
+          "package_name": "com.videostatusmaker.vidoxvideomaker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "647118127714-1b7he73t0itl0h0dddtnads504b6hv2h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8jcCq5Gm9PMhi1-a-ClRgExS7oLO0qBw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "647118127714-1b7he73t0itl0h0dddtnads504b6hv2h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="9dp"
+    app:cardElevation="5dp"
+    android:layout_margin="@dimen/_8sdp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_auto_image_slider"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"/>
+
+
+    <ImageView
+        android:id="@+id/iv_gif_container"
+        android:layout_width="@dimen/_65sdp"
+        android:layout_height="@dimen/_65sdp"
+        android:layout_gravity="bottom|start"
+        android:layout_margin="@dimen/_40sdp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/white30"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_auto_image_slider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:padding="@dimen/_5sdp"
+            android:textColor="#FFF"
+            android:textSize="@dimen/_15sdp" />
+
+    </FrameLayout>
+
+</androidx.cardview.widget.CardView>

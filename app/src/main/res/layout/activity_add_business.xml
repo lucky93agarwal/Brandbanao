@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_screen"
+        tools:context="com.astarconcepts.brandbanao.ui.activities.AddBusinessActivity">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar_layout"
+            android:layout_width="0dp"
+            android:layout_height="?actionBarSize"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/ll_adview"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="horizontal">
+
+                    <com.mikhaellopez.circularimageview.CircularImageView
+                        android:id="@+id/iv_profile"
+                        android:layout_width="@dimen/_65sdp"
+                        android:layout_height="@dimen/_65sdp"
+                        android:src="@drawable/ic_profile"
+                        app:civ_border_color="@color/black"
+                        app:civ_border_width="@dimen/_1sdp"
+                        app:civ_shadow="false"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <TextView
+                    android:id="@+id/iv_business"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginVertical="@dimen/_10sdp"
+                    android:background="@drawable/round_white"
+                    android:backgroundTint="@color/tabColor"
+                    android:paddingHorizontal="@dimen/_20sdp"
+                    android:paddingVertical="@dimen/_8sdp"
+                    android:text="Add Photo"
+                    android:textColor="@color/black"
+                    app:textSize='@{"button_text_16"}' />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="@font/nunito_sans_semibold"
+                    android:text="@string/business_name"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/iv_business"
+                    app:textSize='@{"font_body_s_size"}' />
+
+                <EditText
+                    android:id="@+id/etBusinessName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:background="@drawable/edit_bg"
+                    android:hint="@string/hint_business_name"
+                    android:inputType="textPersonName"
+                    android:paddingHorizontal="@dimen/_8sdp"
+                    android:paddingVertical="@dimen/_8sdp"
+                    android:textColorHint="@color/gray"
+                    app:fonts='@{"normal"}'
+                    app:textSize='@{"font_body_xs_size"}' />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="@font/nunito_sans_semibold"
+                    android:text="Tagline"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toStartOf="@+id/etBusinessName"
+                    app:layout_constraintTop_toBottomOf="@+id/etBusinessNumber"
+                    app:textSize='@{"font_body_s_size"}' />
+
+                <EditText
+                    android:id="@+id/etBusinessTaglinee"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:background="@drawable/edit_bg"
+                    android:hint="Enter Tagline"
+                    android:inputType="textWebEditText"
+                    android:paddingHorizontal="@dimen/_8sdp"
+                    android:paddingVertical="@dimen/_8sdp"
+                    android:textColorHint="@color/gray"
+                    app:fonts='@{"normal"}'
+                    app:textSize='@{"font_body_xs_size"}' />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="@font/nunito_sans_semibold"
+                    android:text="@string/business_phone_number"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toStartOf="@+id/etBusinessName"
+                    app:layout_constraintTop_toBottomOf="@+id/etBusinessName"
+                    app:textSize='@{"font_body_s_size"}' />
+
+                <EditText
+                    android:id="@+id/etBusinessNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:background="@drawable/edit_bg"
+                    android:hint="@string/hint_business_number"
+                    android:inputType="number"
+                    android:paddingHorizontal="@dimen/_8sdp"
+                    android:paddingVertical="@dimen/_8sdp"
+                    android:textColorHint="@color/gray"
+                    app:fonts='@{"normal"}'
+                    app:layout_constraintEnd_toEndOf="@+id/etBusinessName"
+                    app:layout_constraintStart_toStartOf="@+id/textView10"
+                    app:layout_constraintTop_toBottomOf="@+id/textView10"
+                    app:textSize='@{"font_body_xs_size"}' />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="@font/nunito_sans_semibold"
+                    android:text="@string/business_email"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toStartOf="@+id/etBusinessName"
+                    app:layout_constraintTop_toBottomOf="@+id/etBusinessNumber"
+                    app:textSize='@{"font_body_s_size"}' />
+
+                <EditText
+                    android:id="@+id/etBusinessEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:background="@drawable/edit_bg"
+                    android:hint="@string/hint_business_email"
+                    android:inputType="textEmailAddress"
+                    android:paddingHorizontal="@dimen/_8sdp"
+                    android:paddingVertical="@dimen/_8sdp"
+                    android:textColorHint="@color/gray"
+                    app:fonts='@{"normal"}'
+                    app:textSize='@{"font_body_xs_size"}' />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="@font/nunito_sans_semibold"
+                    android:text="@string/business_website"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toStartOf="@+id/etBusinessName"
+                    app:layout_constraintTop_toBottomOf="@+id/etBusinessNumber"
+                    app:textSize='@{"font_body_s_size"}' />
+
+                <EditText
+                    android:id="@+id/etBusinessWebsite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:background="@drawable/edit_bg"
+                    android:hint="@string/hint_business_website"
+                    android:inputType="textWebEditText"
+                    android:paddingHorizontal="@dimen/_8sdp"
+                    android:paddingVertical="@dimen/_8sdp"
+                    android:textColorHint="@color/gray"
+                    app:fonts='@{"normal"}'
+                    app:textSize='@{"font_body_xs_size"}' />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="@font/nunito_sans_semibold"
+                    android:text="@string/business_address"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toStartOf="@+id/etBusinessName"
+                    app:layout_constraintTop_toBottomOf="@+id/etBusinessNumber"
+                    app:textSize='@{"font_body_s_size"}' />
+
+                <EditText
+                    android:id="@+id/etBusinessAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_80sdp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:background="@drawable/edit_bg"
+                    android:gravity="top"
+                    android:hint="@string/hint_business_address"
+                    android:inputType="textMultiLine"
+                    android:lines="5"
+                    android:paddingHorizontal="@dimen/_8sdp"
+                    android:paddingVertical="@dimen/_8sdp"
+                    android:textColorHint="@color/gray"
+                    app:fonts='@{"normal"}'
+                    app:textSize='@{"font_body_xs_size"}' />
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="@font/nunito_sans_semibold"
+                    android:text="@string/business_categories"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toStartOf="@+id/etBusinessName"
+                    app:layout_constraintTop_toBottomOf="@+id/etBusinessNumber"
+                    app:textSize='@{"font_body_s_size"}' />
+
+                <LinearLayout
+                    android:id="@+id/Activitybusiness_Layout_business"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:background="@drawable/edit_bg"
+                    android:backgroundTint="@color/tabColor"
+                    android:paddingVertical="@dimen/_10sdp"
+                    android:paddingStart="@dimen/_10sdp">
+
+                    <TextView
+                        android:id="@+id/active_cat_name"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:hint="@string/select_business"
+                        android:textColor="@color/black"
+                        android:visibility="visible"
+                        app:fonts='@{"normal"}'
+                        app:textSize='@{"font_body_s_size"}' />
+
+                    <ImageView
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:rotation="-90"
+                        android:src="@drawable/ic_arrow_down" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="@font/nunito_sans_semibold"
+                    android:text="@string/instagram_url"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toStartOf="@+id/etBusinessName"
+                    app:layout_constraintTop_toBottomOf="@+id/etBusinessNumber"
+                    app:textSize='@{"font_body_s_size"}' />
+
+                <EditText
+                    android:id="@+id/etBusinessInsta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:background="@drawable/edit_bg"
+                    android:hint="@string/enter_instagram_url"
+                    android:inputType="textWebEditText"
+                    android:paddingHorizontal="@dimen/_8sdp"
+                    android:paddingVertical="@dimen/_8sdp"
+                    android:textColorHint="@color/gray"
+                    app:fonts='@{"normal"}'
+                    app:textSize='@{"font_body_xs_size"}' />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="@font/nunito_sans_semibold"
+                    android:text="@string/facebook_url"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toStartOf="@+id/etBusinessName"
+                    app:layout_constraintTop_toBottomOf="@+id/etBusinessNumber"
+                    app:textSize='@{"font_body_s_size"}' />
+
+                <EditText
+                    android:id="@+id/etBusinessFacebook"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:background="@drawable/edit_bg"
+                    android:hint="@string/enter_facebook_url"
+                    android:inputType="textWebEditText"
+                    android:paddingHorizontal="@dimen/_8sdp"
+                    android:paddingVertical="@dimen/_8sdp"
+                    android:textColorHint="@color/gray"
+                    app:fonts='@{"normal"}'
+                    app:textSize='@{"font_body_xs_size"}' />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="@font/nunito_sans_semibold"
+                    android:text="@string/twitter_url"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toStartOf="@+id/etBusinessName"
+                    app:layout_constraintTop_toBottomOf="@+id/etBusinessNumber"
+                    app:textSize='@{"font_body_s_size"}' />
+
+                <EditText
+                    android:id="@+id/etBusinessTwitter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:background="@drawable/edit_bg"
+                    android:hint="@string/enter_twitter_url"
+                    android:inputType="textWebEditText"
+                    android:paddingHorizontal="@dimen/_8sdp"
+                    android:paddingVertical="@dimen/_8sdp"
+                    android:textColorHint="@color/gray"
+                    app:fonts='@{"normal"}'
+                    app:textSize='@{"font_body_xs_size"}' />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="@font/nunito_sans_semibold"
+                    android:text="@string/youtube_url"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toStartOf="@+id/etBusinessName"
+                    app:layout_constraintTop_toBottomOf="@+id/etBusinessNumber"
+                    app:textSize='@{"font_body_s_size"}' />
+
+                <EditText
+                    android:id="@+id/etBusinessYoutube"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:background="@drawable/edit_bg"
+                    android:hint="@string/enter_youtube_url"
+                    android:inputType="textWebEditText"
+                    android:paddingHorizontal="@dimen/_8sdp"
+                    android:paddingVertical="@dimen/_8sdp"
+                    android:textColorHint="@color/gray"
+                    app:fonts='@{"normal"}'
+                    app:textSize='@{"font_body_xs_size"}' />
+
+
+                <TextView
+                    android:id="@+id/btn_save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginVertical="@dimen/_20sdp"
+                    android:background="@drawable/round_bg"
+                    android:backgroundTint="@color/active_color"
+                    android:fontFamily="@font/nunito_sans_semibold"
+                    android:paddingHorizontal="@dimen/_70sdp"
+                    android:paddingVertical="@dimen/_8sdp"
+                    android:text="@string/save"
+                    android:textAllCaps="false"
+                    android:textColor="@color/al_white"
+                    app:textSize='@{"button_text_16"}' />
+            </LinearLayout>
+
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/ll_adview"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <include
+
+                layout="@layout/item_banner_ads"
+                android:layout_width="match_parent"
+                android:layout_height="?android:actionBarSize"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout android:soundEffectsEnabled="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="posts"
+            type="com.astarconcepts.brandbanao.model.PostItem" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_margin="7dp"
+        app:cardCornerRadius="16dp"
+        android:layout_width="match_parent"
+        app:cardBackgroundColor="@color/al_white"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="16dp"
+                app:cardElevation="0dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/mainLayOut"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxHeight="300dp">
+                <ImageView
+                    android:id="@+id/iv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/btxt27"
+                    imageURL="@{posts.image_url}"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerview"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    android:orientation="horizontal"
+                    tools:listitem="@layout/personal_frame_one"
+                    android:layout_alignBottom="@id/iv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+
+                    <ImageView
+                        android:id="@+id/watermark"
+                        android:padding="@dimen/_2sdp"
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:src="@drawable/watermark_remove"/>
+
+
+
+            </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+                android:paddingVertical="@dimen/_8sdp"
+                android:paddingHorizontal="@dimen/_8sdp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_55sdp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/edit_Btn"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:src="@drawable/ic_edit_"
+                        app:tint="@color/active_color"
+                        android:padding="2dp"
+                       />
+                    <TextView
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Edit"
+                        android:textSize="@dimen/_13sdp"
+                        android:textColor="@color/black_1000"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/downloadBtn"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:src="@drawable/ic_save"
+                        android:padding="2dp"
+                        />
+
+                    <TextView
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Download"
+                        android:textSize="@dimen/_13sdp"
+                        android:textColor="@color/black_1000"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/share_Btn"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:padding="2dp"
+                        android:src="@drawable/ic_whatsapp"
+                        />
+                    <TextView
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Share"
+                        android:textSize="@dimen/_13sdp"
+                        android:textColor="@color/black_1000"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

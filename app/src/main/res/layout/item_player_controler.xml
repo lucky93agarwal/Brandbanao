@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@id/exo_play"
+        android:background="@drawable/circle_drawable"
+        android:backgroundTint="#8B7E7E7E"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_gravity="center"
+        android:padding="@dimen/_10sdp"
+        android:src="@drawable/exo_controls_play"/>
+
+    <ImageView
+        android:id="@id/exo_pause"
+        android:alpha="0"
+        android:layout_width="@dimen/_300sdp"
+        android:layout_height="@dimen/_300sdp"
+        android:layout_gravity="center"
+        android:padding="@dimen/_82sdp"
+        android:src="@drawable/exo_controls_play"/>
+
+</FrameLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="storyData"
+            type="com.astarconcepts.brandbanao.model.StoryItem" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.agrawalsuneet.loaderspack.loaders.RotatingCircularSticksLoader
+            android:id="@+id/iv_story_bgg"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_margin="@dimen/_6sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:rotatingsticks_animDuration="0"
+            app:rotatingsticks_innerCircleRadius="@dimen/_5sdp"
+            app:rotatingsticks_noOfSticks="15"
+            app:rotatingsticks_outerCircleRadius="@dimen/_30sdp"
+            app:rotatingsticks_stickColor="@color/active_color"
+            app:rotatingsticks_viewBackgroundColor="@color/white" />
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/iv_story"
+            android:layout_width="@dimen/_56sdp"
+            android:layout_height="@dimen/_56sdp"
+            android:layout_margin="@dimen/_6sdp"
+            android:src="@drawable/ic_profile"
+            app:circle_imageURL="@{storyData.imageUrl}"
+            app:civ_border="false"
+            app:civ_border_color="@color/primary_color"
+            app:civ_shadow="false"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_story_bgg"
+            app:layout_constraintEnd_toEndOf="@+id/iv_story_bgg"
+            app:layout_constraintStart_toStartOf="@+id/iv_story_bgg"
+            app:layout_constraintTop_toTopOf="@+id/iv_story_bgg" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_4sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:gravity="center"
+            android:maxLines="2"
+            android:text="@{storyData.title}"
+            android:textColor="@color/black"
+            app:fonts='@{"bold"}'
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_story_bgg"
+            app:textSize='@{"font_body_xxs_size"}'
+            tools:text="Good Mornings" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
